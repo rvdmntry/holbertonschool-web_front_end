@@ -1,0 +1,60 @@
+/* styles/7-style.css */
+
+/* Define custom font-weight properties on the root element */
+:root {
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	--font-family-base: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-size-small: 1.2rem;
+	--font-size-medium: 1.6rem;
+	--font-size-large: 1.8rem;
+	--font-size-x-large: 2.3rem;
+	--font-size-xx-large: 4.8rem;
+	--font-weight-regular: 400;
+	--font-weight-bold: 700;
+  }
+
+  /* Set the font-size for the html element to 62.5% */
+  html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+  }
+
+  /* Set the font-family and font-weight for the body using custom properties */
+  body {
+	font-family: var(--font-family-base);
+	font-size: var(--font-size-medium);
+	font-weight: var(--font-weight-regular);
+	color: var(--text-color);
+  }
+
+  /* Set the font-family and font-weight for all heading levels using custom properties */
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
+	font-weight: var(--font-weight-bold);
+  }
+
+  /* Set the font-family for all anchor elements using custom property */
+  a {
+	color: var(--text-color);
+  }
+
+  /* Hide elements with the class visually-hidden */
+  .visually-hidden {
+	display: none;
+  }
+
+  /* Set the foreground color for elements with the class card-category using custom property */
+  .card-category {
+	color: var(--color-primary);
+  }
+
+  /* Set the foreground color for elements with the class section-tagline using custom property */
+  .section-tagline {
+	color: var(--color-primary);
+  }
