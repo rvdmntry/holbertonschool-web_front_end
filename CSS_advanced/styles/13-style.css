@@ -53,6 +53,11 @@
 	text-decoration: none;
   }
 
+  /* Style the link state for the link */
+  a[href]:link {
+	color: var(--text-color);
+  }
+
   /* Style the visited state for the link */
   a[href]:visited {
 	font-style: italic;
