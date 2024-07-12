@@ -1,0 +1,44 @@
+/* styles/4-style.css */
+
+/* Define custom font-family properties on the root element */
+:root {
+	--color-primary: #d73953;
+	--color-black: #090909;
+	--color-white: #ffffff;
+	--color-light-grey: #f3f3f3;
+	--color-dark-grey: #353535;
+	--text-color: var(--color-black);
+	--font-family-base: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	--font-family-title: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  }
+
+  /* Set the font-family for the body using custom property */
+  body {
+	font-family: var(--font-family-base);
+	color: var(--text-color);
+  }
+
+  /* Set the font-family for all anchor elements using custom property */
+  a {
+	color: var(--text-color);
+  }
+
+  /* Hide elements with the class visually-hidden */
+  .visually-hidden {
+	display: none;
+  }
+
+  /* Set the foreground color for elements with the class card-category using custom property */
+  .card-category {
+	color: var(--color-primary);
+  }
+
+  /* Set the foreground color for elements with the class section-tagline using custom property */
+  .section-tagline {
+	color: var(--color-primary);
+  }
+
+  /* Set the font-family for all heading levels using custom property */
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--font-family-title);
+  }
