@@ -19,8 +19,9 @@
 
   /* Set the font-size for the html element to 62.5% */
   html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
-  }
+}
 
   /* Set the font-family and font-size for the body using custom properties */
   body {
