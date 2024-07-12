@@ -23,7 +23,7 @@
   html {
 	scroll-behavior: smooth;
 	font-size: 62.5%;
-}
+  }
 
   /* Set the font-family and font-weight for the body using custom properties */
   body {
