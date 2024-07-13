@@ -514,7 +514,7 @@ ul.row {
 .footer-copyright {
 	margin: 0;
 	font-size: var(--font-size-small);
-	color: var (--text-color);
+	color: var(--text-color);
 }
 
 /* Set text alignment for ul elements within the footer class */
@@ -529,10 +529,11 @@ ul.row {
 	margin-left: auto;
 }
 
-/* Select all classes starting with col-, float them to the left and set padding */
-[class^="col-"] {
-	float: left;
-	padding: 0.5rem; /* Half of the root element */
+/* Redefine custom properties and set background color for elements with data-section-theme="dark" */
+[data-section-theme="dark"] {
+	--text-color: var(--color-white);
+	--section-title-color: var(--color-white);
+	background-color: var(--color-black);
 }
 
 /* Define root element custom properties */
@@ -568,23 +569,22 @@ ul.row {
 	--nav-item-font-family: var(--font-family-title);
 	--nav-item-font-weight: var(--font-weight-bold);
 	--nav-item-font-size: var(--font-size-medium);
-	--nav-item-letter-spacing: 0.04rem; /* 4% of root element */
+	--nav-item-letter-spacing: 0.04rem;
 	--nav-item-display: inline-block;
-	--nav-item-margin: 0 0 3rem 0; /* 3 times the root element on the bottom and 0 elsewhere */
+	--nav-item-margin: 0 0 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
 	--section-tagline-margin: 0;
+}
+
+/* Select all classes starting with col-, float them to the left and set padding */
+[class^="col-"] {
+	float: left;
+	padding: 0.5rem; /* Half of the root element */
 }
 
 /* Set padding for elements with the footer class */
 .footer {
 	padding: var(--footer-padding);
-}
-
-/* Style elements with data-section-theme="dark" */
-[data-section-theme="dark"] {
-	--text-color: var(--color-white);
-	--section-title-color: var(--color-white);
-	background-color: var(--color-black);
 }
 
 /* Set text color for elements with the footer-address class */
