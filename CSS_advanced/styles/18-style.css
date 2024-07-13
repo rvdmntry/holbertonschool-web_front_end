@@ -452,7 +452,7 @@
 
   nav .nav-link {
 	  display: block;
-	  padding: 0.5rem 1rem; /* Half of root element for top/bottom, root element for left/right */
+	  padding: 0.8rem 1.6rem; /* Half of root element for top/bottom, root element for left/right */
   }
 
   nav .nav-link:hover {
@@ -513,6 +513,6 @@
 	  --nav-item-font-size: var(--font-size-medium);
 	  --nav-item-letter-spacing: 0.4rem; /* 4% of root element (16px) */
 	  --nav-item-display: inline-block;
-	  --nav-item-margin: 3rem 0 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
+	  --nav-item-margin: 4.8rem 0 0 0; /* 3 times the root element on the bottom and 0 elsewhere */
 	  --nav-item-link-hover: var(--color-primary);
   }
